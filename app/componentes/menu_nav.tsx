@@ -13,7 +13,7 @@ const NAVIGATION_ROUTES = [
   { label: 'Sobre Nós', href: '/paginas/pagina_sobre' },
   { label: 'Contato', href: '/paginas/pagina_contato' },
   { label: 'Lista de curriculos', href: '/paginas/curriculos' },
-   { label: 'Novo currriculo', href: '/paginas/curriculos/novo' },
+  { label: 'Novo currriculo', href: '/paginas/curriculos/novo' },
 ];
 
 export default function Nav({ isMobile = false, onItemClick }: NavProps) {

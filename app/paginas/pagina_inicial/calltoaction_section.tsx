@@ -1,16 +1,32 @@
- export default function CalltoactionSection(){
-    return (
-        <section className="bg-blue-600 py-20 px-6 text-center">
-        <div className="max-w-3xl mx-auto text-white">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Call to Action (CTA)</h2>
-          <p className="text-blue-100 text-lg mb-8">
-            Esta seção foca em conversão. Usa <code className="bg-blue-800 px-1 rounded font-mono">bg-blue-600</code> para alto contraste e ruptura visual com as seções anteriores brancas/cinzas.
+export default function CallToActionSection() {
+  return (
+    <section className="bg-white py-24">
+      <div className="max-w-5xl mx-auto px-6">
+        <div className="rounded-[32px] border border-blue-100 bg-blue-950 p-12 text-center shadow-2xl">
+          <span className="inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-1 text-sm text-blue-100">
+            Comece gratuitamente
+          </span>
+
+          <h2 className="mt-6 text-4xl md:text-5xl font-black leading-tight text-white">
+            Monte seu currículo profissional hoje mesmo.
+          </h2>
+
+          <p className="mt-6 text-lg text-blue-100 max-w-2xl mx-auto leading-relaxed">
+            Crie currículos modernos, organizados e prontos para enviar para
+            empresas e recrutadores.
           </p>
-          <button className="animate-bounce px-8 py-4 bg-white text-blue-700 font-bold rounded-full shadow-xl hover:bg-gray-50 transition-colors">
-            animate-bounce & flex
-          </button>
+
+          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="rounded-2xl bg-white hover:bg-slate-100 transition px-8 py-4 font-bold text-blue-950">
+              Criar Currículo Agora
+            </button>
+
+            <button className="rounded-2xl border border-white/20 hover:bg-white/10 transition px-8 py-4 font-semibold text-white">
+              Saiba Mais
+            </button>
+          </div>
         </div>
-      </section>
-    )
- }    
-     
+      </div>
+    </section>
+  );
+}

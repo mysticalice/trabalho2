@@ -1,57 +1,178 @@
-import React from 'react';
-
-export default function SobrePage() {
+export default function PaginaSobre() {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
-      
-      {/* flex-grow empurra o footer para o final se o conteúdo for curto */}
-      <main className="flex-grow max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        
-        {/* Cabeçalho da Seção */}
-        <div className="text-center mb-16 space-y-4">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">Nossa Metodologia</h1>
-          <p className="text-xl text-gray-500 max-w-2xl mx-auto">
-            A aplicação estrita do paradigma Utility-First para escalabilidade de interfaces.
+    <main className="min-h-screen bg-white text-slate-900">
+      {/* Hero */}
+      <section className="border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-6 py-24">
+          <span className="inline-flex rounded-full border border-blue-900/20 bg-blue-900/5 px-4 py-1 text-sm text-blue-900 font-medium">
+            Sobre a Plataforma
+          </span>
+
+          <h1 className="mt-6 text-5xl md:text-6xl font-black leading-tight max-w-4xl text-blue-950">
+            Facilitando a criação de currículos modernos e profissionais.
+          </h1>
+
+          <p className="mt-6 text-lg text-slate-600 leading-relaxed max-w-3xl">
+            O CVConnect é uma plataforma desenvolvida para ajudar estudantes,
+            profissionais e freelancers a criarem currículos modernos,
+            organizados e preparados para o mercado de trabalho.
           </p>
         </div>
+      </section>
 
-        {/* Layout de Imagem e Texto: Flexbox com inversão condicional no mobile */}
-        <div className="flex flex-col md:flex-row items-center gap-12">
-          
-          {/* Container da Imagem: aspect-video força a proporção 16:9, object-cover evita distorção */}
-          <div className="w-full md:w-1/2 aspect-video rounded-2xl overflow-hidden shadow-2xl relative group">
-             {/* Simulação de imagem - Na prática, use <Image /> do Next.js */}
-            <div className="w-full h-full bg-slate-300 flex items-center justify-center bg-gradient-to-tr from-blue-900 to-indigo-700">
-              <span className="text-white font-mono opacity-50 group-hover:scale-110 transition-transform duration-500">
-                [ object-cover aspect-video ]
-              </span>
-            </div>
-            {/* Overlay com gradiente (inset-0 cobre todo o pai relativo) */}
-            <div className="absolute inset-0 bg-blue-900/10 mix-blend-multiply"></div>
+      {/* Sobre */}
+      <section className="py-24">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 className="text-4xl font-black text-blue-950">
+              Nossa missão
+            </h2>
+
+            <p className="mt-6 text-slate-600 text-lg leading-relaxed">
+              Nosso objetivo é simplificar o processo de criação de currículos,
+              oferecendo ferramentas modernas, intuitivas e acessíveis para
+              qualquer pessoa que deseja conquistar novas oportunidades.
+            </p>
+
+            <p className="mt-6 text-slate-600 text-lg leading-relaxed">
+              Acreditamos que um currículo bem estruturado pode abrir portas,
+              destacar talentos e aumentar as chances de contratação.
+            </p>
           </div>
 
-          {/* Texto / Tipografia baseada em blocos */}
-          <div className="w-full md:w-1/2 space-y-6">
-            <h2 className="text-3xl font-bold text-gray-800">Por que utilitários?</h2>
-            {/* O uso de text-gray-600 e leading-relaxed padroniza blocos de leitura */}
-            <p className="text-gray-600 leading-relaxed">
-              Diferente das abordagens semânticas tradicionais, onde você nomeia um <code className="bg-gray-200 px-1 rounded text-sm text-red-600">.perfil-card</code> e escreve regras em um arquivo CSS separado, o Tailwind acopla o estilo ao markup.
-            </p>
-            <ul className="space-y-3">
-               {/* Marcadores customizados usando flex e ícones vetoriais embutidos */}
-              {['Ausência de colisão de escopo', 'Performance aprimorada (PurgeCSS)', 'Contexto visual explícito no JSX'].map((item, index) => (
-                <li key={index} className="flex items-center text-gray-700">
-                  <svg className="h-5 w-5 text-emerald-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  {item}
-                </li>
-              ))}
-            </ul>
+          <div className="rounded-[32px] border border-slate-200 bg-slate-50 p-10 shadow-sm">
+            <div className="grid grid-cols-2 gap-6">
+              <div className="rounded-2xl bg-white border border-slate-200 p-6">
+                <h3 className="text-4xl font-black text-blue-950">
+                  +12k
+                </h3>
+
+                <p className="mt-2 text-slate-600">
+                  Currículos criados
+                </p>
+              </div>
+
+              <div className="rounded-2xl bg-white border border-slate-200 p-6">
+                <h3 className="text-4xl font-black text-blue-950">
+                  98%
+                </h3>
+
+                <p className="mt-2 text-slate-600">
+                  Satisfação dos usuários
+                </p>
+              </div>
+
+              <div className="rounded-2xl bg-white border border-slate-200 p-6">
+                <h3 className="text-4xl font-black text-blue-950">
+                  +50
+                </h3>
+
+                <p className="mt-2 text-slate-600">
+                  Modelos disponíveis
+                </p>
+              </div>
+
+              <div className="rounded-2xl bg-white border border-slate-200 p-6">
+                <h3 className="text-4xl font-black text-blue-950">
+                  24h
+                </h3>
+
+                <p className="mt-2 text-slate-600">
+                  Suporte online
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </main>
+      </section>
 
-    </div>
+      {/* Valores */}
+      <section className="bg-slate-50 border-y border-slate-200 py-24">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center max-w-2xl mx-auto">
+            <h2 className="text-4xl font-black text-blue-950">
+              Nossos valores
+            </h2>
+
+            <p className="mt-4 text-slate-600 text-lg">
+              Desenvolvemos uma plataforma focada em qualidade, simplicidade e
+              inovação.
+            </p>
+          </div>
+
+          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {[
+              {
+                title: "Simplicidade",
+                description:
+                  "Interface intuitiva e fácil de utilizar.",
+              },
+              {
+                title: "Modernidade",
+                description:
+                  "Designs atualizados e profissionais.",
+              },
+              {
+                title: "Acessibilidade",
+                description:
+                  "Ferramentas disponíveis para todos os usuários.",
+              },
+              {
+                title: "Organização",
+                description:
+                  "Estruture experiências e habilidades facilmente.",
+              },
+              {
+                title: "Performance",
+                description:
+                  "Plataforma rápida e responsiva.",
+              },
+              {
+                title: "Inovação",
+                description:
+                  "Recursos modernos para destacar currículos.",
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="rounded-3xl border border-slate-200 bg-white p-8 hover:border-blue-900/30 transition shadow-sm"
+              >
+                <div className="w-14 h-14 rounded-2xl bg-blue-900/10 border border-blue-900/20 flex items-center justify-center text-blue-950 font-bold text-xl">
+                  {index + 1}
+                </div>
+
+                <h3 className="mt-6 text-2xl font-bold text-blue-950">
+                  {item.title}
+                </h3>
+
+                <p className="mt-4 text-slate-600 leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-24">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="rounded-[32px] border border-slate-200 bg-blue-950 p-12 text-center shadow-xl">
+            <h2 className="text-4xl md:text-5xl font-black leading-tight text-white">
+              Comece agora a criar seu currículo.
+            </h2>
+
+            <p className="mt-6 text-lg text-blue-100 max-w-2xl mx-auto leading-relaxed">
+              Utilize ferramentas modernas para construir currículos
+              profissionais e aumentar suas oportunidades.
+            </p>
+
+            <button className="mt-10 rounded-2xl bg-white hover:bg-slate-100 transition px-8 py-4 font-bold text-blue-950">
+              Criar Currículo
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
