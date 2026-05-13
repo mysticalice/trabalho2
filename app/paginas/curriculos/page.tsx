@@ -383,10 +383,16 @@ export default function CurriculoPage() {
                   </div>
                 </div>
               </div>
-
+            <div className="mt-8 flex gap-4">
               <button className="mt-8 rounded-2xl bg-blue-900 hover:bg-blue-800 transition py-3 px-8 font-bold text-white">
                 Entrar em Contato
               </button>
+             
+            <button className="mt-8 rounded-2xl bg-blue-900 hover:bg-blue-800 transition py-3 px-8 font-bold text-white">
+               Ver currículo
+            </button>
+
+            </div>
             </div>
           ))}
         </div>

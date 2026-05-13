@@ -42,14 +42,14 @@ export default function Footer() {
           </Link>
 
           <Link
-            href="//paginas/curriculos"
+            href="/paginas/curriculos"
             className="hover:text-white hover:translate-x-1 transition-transform w-fit"
           >
             Currículos
           </Link>
 
           <Link
-            href="/contato"
+            href="/paginas/pagina_contato"
             className="hover:text-white hover:translate-x-1 transition-transform w-fit"
           >
             Contato

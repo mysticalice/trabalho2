@@ -1,3 +1,6 @@
+import Link from "next/link";
+
+
 export default function CallToActionSection() {
   return (
     <section className="bg-white py-24">
@@ -17,13 +20,18 @@ export default function CallToActionSection() {
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="rounded-2xl bg-white hover:bg-slate-100 transition px-8 py-4 font-bold text-blue-950">
-              Criar Currículo Agora
-            </button>
+            
+            <Link
+              href= '/paginas/curriculos/novo'
+              className="rounded-2xl bg-white hover:bg-slate-100 transition px-8 py-4 font-bold text-blue-950"
+            >
+              Criar currículo agora
+            </Link>
 
             <button className="rounded-2xl border border-white/20 hover:bg-white/10 transition px-8 py-4 font-semibold text-white">
               Saiba Mais
             </button>
+
           </div>
         </div>
       </div>
