@@ -28,9 +28,6 @@ export default function CallToActionSection() {
               Criar currículo agora
             </Link>
 
-            <button className="rounded-2xl border border-white/20 hover:bg-white/10 transition px-8 py-4 font-semibold text-white">
-              Saiba Mais
-            </button>
 
           </div>
         </div>

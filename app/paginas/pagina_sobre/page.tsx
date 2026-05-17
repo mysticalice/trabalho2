@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function PaginaSobre() {
   return (
     <main className="min-h-screen bg-white text-slate-900">
@@ -167,9 +169,12 @@ export default function PaginaSobre() {
               profissionais e aumentar suas oportunidades.
             </p>
 
-            <button className="mt-10 rounded-2xl bg-white hover:bg-slate-100 transition px-8 py-4 font-bold text-blue-950">
-              Criar Currículo
-            </button>
+        <Link
+           href="paginas/curriculos/novo"
+           className="mt-10 inline-flex rounded-2xl bg-white hover:bg-slate-100 transition px-8 py-4 font-bold text-blue-950"
+    >
+          Criar Currículo
+        </Link>
           </div>
         </div>
       </section>

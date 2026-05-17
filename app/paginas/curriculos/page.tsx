@@ -1,9 +1,11 @@
 "use client";
 
+import Link from "next/link";
 import React, { useMemo, useState } from "react";
 
 const candidatos = [
   {
+    id: 1,
     nome: "Amanda Rocha",
     cargo: "Desenvolvedora Front-end",
     cidade: "Florianópolis",
@@ -21,6 +23,7 @@ const candidatos = [
   },
 
   {
+    id: 2,
     nome: "Carlos Henrique",
     cargo: "UI/UX Designer",
     cidade: "Blumenau",
@@ -38,6 +41,7 @@ const candidatos = [
   },
 
   {
+    id: 3,
     nome: "Fernanda Lima",
     cargo: "Analista de Sistemas",
     cidade: "Pomerode",
@@ -55,6 +59,7 @@ const candidatos = [
   },
 
   {
+    id: 4,
     nome: "Lucas Martins",
     cargo: "Desenvolvedor Back-end",
     cidade: "Florianópolis",
@@ -72,6 +77,7 @@ const candidatos = [
   },
 
   {
+    id: 5,
     nome: "Juliana Costa",
     cargo: "Product Designer",
     cidade: "Blumenau",
@@ -89,6 +95,7 @@ const candidatos = [
   },
 
   {
+    id: 6,
     nome: "Matheus Oliveira",
     cargo: "Desenvolvedor Mobile",
     cidade: "Blumenau",
@@ -106,6 +113,7 @@ const candidatos = [
   },
 
   {
+    id: 7,
     nome: "Beatriz Almeida",
     cargo: "Analista de Dados",
     cidade: "Florianópolis",
@@ -123,6 +131,7 @@ const candidatos = [
   },
 
   {
+    id: 8,
     nome: "Rafael Souza",
     cargo: "DevOps Engineer",
     cidade: "Pomerode",
@@ -140,6 +149,7 @@ const candidatos = [
   },
 
   {
+    id: 9,
     nome: "Camila Ferreira",
     cargo: "Social Media",
     cidade: "Blumenau",
@@ -157,6 +167,7 @@ const candidatos = [
   },
 
   {
+    id: 10,
     nome: "Eduardo Mendes",
     cargo: "Cyber Security Analyst",
     cidade: "Florianópolis",
@@ -230,7 +241,7 @@ export default function CurriculoPage() {
                 placeholder="Nome ou cargo..."
                 value={pesquisa}
                 onChange={(e) => setPesquisa(e.target.value)}
-                className="w-full rounded-xl border border-slate-300 py-3 px-4 focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500 outline-none"
+                className="w-full rounded-xl border border-slate-300 py-3 px-4 text-slate-800 placeholder:text-slate-600 focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500 outline-none"
               />
             </div>
 
@@ -242,7 +253,7 @@ export default function CurriculoPage() {
               <select
                 value={cidadeFiltro}
                 onChange={(e) => setCidadeFiltro(e.target.value)}
-                className="w-full rounded-xl border border-slate-300 py-3 px-4 focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500 outline-none"
+                className="w-full rounded-xl border border-slate-300 py-3 px-4 text-slate-800 placeholder:text-slate-600 focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500 outline-none"
               >
                 <option value="">Todas</option>
                 <option value="Florianópolis">Florianópolis</option>
@@ -259,7 +270,7 @@ export default function CurriculoPage() {
               <select
                 value={turnoFiltro}
                 onChange={(e) => setTurnoFiltro(e.target.value)}
-                className="w-full rounded-xl border border-slate-300 py-3 px-4 focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500 outline-none"
+                className="w-full rounded-xl border border-slate-300 py-3 px-4 text-slate-800 placeholder:text-slate-600 focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500 outline-none"
               >
                 <option value="">Todos</option>
                 <option value="Matutino">Matutino</option>
@@ -384,13 +395,17 @@ export default function CurriculoPage() {
                 </div>
               </div>
             <div className="mt-8 flex gap-4">
-              <button className="mt-8 rounded-2xl bg-blue-900 hover:bg-blue-800 transition py-3 px-8 font-bold text-white">
-                Entrar em Contato
-              </button>
+              <Link href={`/paginas/contato/${candidato.id}`}
+                 className="mt-8 rounded-2xl bg-blue-900 hover:bg-blue-800 transition py-3 px-8 font-bold text-white inline-flex items-center justify-center"
+              >
+                 Entrar em Contato
+              </Link>
              
-            <button className="mt-8 rounded-2xl bg-blue-900 hover:bg-blue-800 transition py-3 px-8 font-bold text-white">
-               Ver currículo
-            </button>
+            <Link
+              href={`/paginas/curriculos/${candidato.id}`}
+              className="mt-8 rounded-2xl bg-blue-900 hover:bg-blue-800 transition py-3 px-8 font-bold text-white inline-flex items-center justify-center"
+>                   Ver currículo
+            </Link>
 
             </div>
             </div>
