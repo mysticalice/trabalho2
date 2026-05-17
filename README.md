@@ -74,7 +74,7 @@ app/
 Clone o repositório:
 
 ```bash
-git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
+git clone https://github.com/mysticalice/trabalho2.git
 ```
 
 Entre na pasta do projeto:
