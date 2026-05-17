@@ -17,8 +17,8 @@ export default function Header() {
           
           {/* Logo da Aplicação */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-2xl font-extrabold text-blue-700 tracking-tighter">
-              Tailwind<span className="text-gray-900">Edu</span>
+            <Link href="/" className="text-2xl font-extrabold text-gray-700 tracking-tighter">
+              Currículo<span className="text-blue-600">Pro</span>
             </Link>
           </div>
 

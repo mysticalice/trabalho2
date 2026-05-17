@@ -7,22 +7,22 @@ export default function PaginaSobre() {
       <section className="border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-6 py-24">
           <span className="inline-flex rounded-full border border-blue-900/20 bg-blue-900/5 px-4 py-1 text-sm text-blue-900 font-medium">
-            Sobre a Plataforma
+            Sobre o CurrículoPro
           </span>
 
-          <h1 className="mt-6 text-5xl md:text-6xl font-black leading-tight max-w-4xl text-blue-950">
+          <h1 className="mt-6 text-5xl md:text-6xl font-italic leading-tight max-w-4xl text-blue-700">
             Facilitando a criação de currículos modernos e profissionais.
           </h1>
 
           <p className="mt-6 text-lg text-slate-600 leading-relaxed max-w-3xl">
-            O CVConnect é uma plataforma desenvolvida para ajudar estudantes,
+            O CurrículoPro é uma plataforma desenvolvida para ajudar estudantes,
             profissionais e freelancers a criarem currículos modernos,
             organizados e preparados para o mercado de trabalho.
           </p>
         </div>
       </section>
 
-      {/* Sobre */}
+      
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
           <div>
@@ -88,7 +88,6 @@ export default function PaginaSobre() {
         </div>
       </section>
 
-      {/* Valores */}
       <section className="bg-slate-50 border-y border-slate-200 py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto">
@@ -170,7 +169,7 @@ export default function PaginaSobre() {
             </p>
 
         <Link
-           href="paginas/curriculos/novo"
+           href="/paginas/curriculos/novo/"
            className="mt-10 inline-flex rounded-2xl bg-white hover:bg-slate-100 transition px-8 py-4 font-bold text-blue-950"
     >
           Criar Currículo

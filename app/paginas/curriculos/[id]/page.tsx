@@ -273,7 +273,7 @@ export default function CurriculoDetalhes() {
 
           <Link
             href="/paginas/curriculos/contato/"
-            className="rounded-2xl bg-green-600 hover:bg-green-700 transition py-4 px-8 font-bold text-white"
+            className="rounded-2xl bg-blue-600 hover:bg-slate-500 transition py-4 px-8 font-bold text-white"
           >
             Entrar em Contato
           </Link>

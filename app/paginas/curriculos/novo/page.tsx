@@ -75,7 +75,7 @@ export default function CurriculoPage() {
               <input
                 type="text"
                 placeholder="Seu nome completo"
-                className="block w-full rounded-lg border-gray-300 py-3 px-4 shadow-sm focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 border"
+                className="block w-full rounded-lg border-gray-300 py-3 px-4 text-slate-700 shadow-sm focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 border"
               />
             </div>
 
@@ -87,7 +87,7 @@ export default function CurriculoPage() {
               <input
                 type="text"
                 placeholder="Ex: Desenvolvedor Front-end"
-                className="block w-full rounded-lg border-gray-300 py-3 px-4 shadow-sm focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 border"
+                className="block w-full rounded-lg border-gray-300 py-3 px-4 text-slate-700 shadow-sm focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 border"
               />
             </div>
 
@@ -99,7 +99,7 @@ export default function CurriculoPage() {
               <input
                 type="email"
                 placeholder="exemplo@email.com"
-                className="block w-full rounded-lg border-gray-300 py-3 px-4 shadow-sm focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 border"
+                className="block w-full rounded-lg border-gray-300 py-3 px-4 text-slate-700 shadow-sm focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 border"
               />
             </div>
 
@@ -111,7 +111,7 @@ export default function CurriculoPage() {
               <input
                 type="tel"
                 placeholder="(00) 00000-0000"
-                className="block w-full rounded-lg border-gray-300 py-3 px-4 shadow-sm focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 border"
+                className="block w-full rounded-lg border-gray-300 py-3 px-4 text-slate-700 shadow-sm focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 border"
               />
             </div>
 
@@ -123,7 +123,7 @@ export default function CurriculoPage() {
               <input
                 type="text"
                 placeholder="000.000.000-00"
-                className="block w-full rounded-lg border-gray-300 py-3 px-4 shadow-sm focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 border"
+                className="block w-full rounded-lg border-gray-300 py-3 px-4 text-slate-700 shadow-sm focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 border"
               />
             </div>
 
@@ -138,7 +138,7 @@ export default function CurriculoPage() {
             <textarea
               rows={4}
               placeholder="Resumo sobre sua carreira..."
-              className="block w-full rounded-lg border-gray-300 py-3 px-4 shadow-sm focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 border resize-y"
+              className="block w-full rounded-lg border-gray-300 py-3 px-4 text-slate-700 shadow-sm focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 border resize-y"
             />
           </div>
 
@@ -151,7 +151,7 @@ export default function CurriculoPage() {
             <textarea
               rows={5}
               placeholder="Descreva suas experiências..."
-              className="block w-full rounded-lg border-gray-300 py-3 px-4 shadow-sm focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 border resize-y"
+              className="block w-full rounded-lg border-gray-300 py-3 px-4 text-slate-700 shadow-sm focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 border resize-y"
             />
           </div>
 
@@ -164,7 +164,7 @@ export default function CurriculoPage() {
             <textarea
               rows={4}
               placeholder="Cursos, faculdade, certificações..."
-              className="block w-full rounded-lg border-gray-300 py-3 px-4 shadow-sm focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 border resize-y"
+              className="block w-full rounded-lg border-gray-300 py-3 px-4 text-slate-700 shadow-sm focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 border resize-y"
             />
           </div>
 
@@ -177,7 +177,7 @@ export default function CurriculoPage() {
             <textarea
               rows={3}
               placeholder="Ex: React, Comunicação, Liderança..."
-              className="block w-full rounded-lg border-gray-300 py-3 px-4 shadow-sm focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 border resize-y"
+              className="block w-full rounded-lg border-gray-300 py-3 px-4 text-slate-700 shadow-sm focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 border resize-y"
             />
           </div>
 

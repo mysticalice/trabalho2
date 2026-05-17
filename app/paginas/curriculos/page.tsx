@@ -395,7 +395,7 @@ export default function CurriculoPage() {
                 </div>
               </div>
             <div className="mt-8 flex gap-4">
-              <Link href={`/paginas/contato/${candidato.id}`}
+              <Link href="/paginas/contato/"
                  className="mt-8 rounded-2xl bg-blue-900 hover:bg-blue-800 transition py-3 px-8 font-bold text-white inline-flex items-center justify-center"
               >
                  Entrar em Contato
